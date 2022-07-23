@@ -1,0 +1,94 @@
+html,
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: #000;
+}
+
+#canvas {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+
+#logo {
+  width: 1920px;
+  position: absolute;
+  text-align: center;
+  bottom: 65%;
+  line-height: 0;
+  width: 100%;
+  font-family: 'Racing Sans One';
+  font-weight: 400;
+  font-size: 9vw;
+  color: #fff;
+  text-shadow: #00d9ff 0 0 32px;
+  mix-blend-mode: screen;
+}
+
+#attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  color: #ccc;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+a {
+  color: #fff;
+}
+
+#controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#controls>.control {
+  display: block;
+  margin: 1em;
+  width: 48px;
+  height: 48px;
+  filter: invert() drop-shadow(0 0 4px #fff);
+  background-size: 100%;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#controls>.control:hover {
+  opacity: 1.0;
+}
+
+#volume {
+  background-image: url(volume_up.svg);
+
+  /* background-color: white; */
+  background-size: cover;
+  cursor: pointer;
+  /* not quite sure why but having any animations active wrecks performance. Might be because of presenting partial frames. */
+  /* animation: pulse 1s ease-in-out 0; */
+}
+
+#github {
+  background-image: url(github.svg);
+}
+
+#about {
+  background-image: url(help.svg);
+}
+
+#volume.on {
+  background-image: url(volume_off.svg);
+}
+
+/* latin */
+@font-face {
+  font-family: 'Racing Sans One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./RacingSansOne.woff2) format('woff2');
+}

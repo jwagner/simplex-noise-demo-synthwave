@@ -1,0 +1,27 @@
+{
+  "name": "simplex-noise-demo-synthwave",
+  "homepage": "https://29a.ch/sandbox/2022/simplex-noise-synthwave/",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "rm -rf dist && parcel index.html",
+    "build": "npx parcel build index.html --dist-dir dist/static/ --public-url static/ && mv dist/static/*.html dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "alea": "^1.0.1",
+    "eslint": "^8.19.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.4.3",
+    "simplex-noise": "^3.0.1"
+  }
+}
