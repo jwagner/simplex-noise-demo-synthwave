@@ -22,6 +22,6 @@
   },
   "dependencies": {
     "gl-matrix": "^3.4.3",
-    "simplex-noise": "^3.0.1"
+    "simplex-noise": "^4.0.0"
   }
 }

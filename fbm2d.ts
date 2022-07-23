@@ -1,4 +1,4 @@
-import { NoiseFunction2D } from './simplex-noise';
+import { NoiseFunction2D } from 'simplex-noise';
 
 export function fbm2d(noise2D: NoiseFunction2D, octaves: number): NoiseFunction2D {
   return function fbm2dFn(x: number, y: number) {

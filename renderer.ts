@@ -1,6 +1,6 @@
 import { vec3, mat4 } from 'gl-matrix';
 import { Grid2D, iterateGrid2D } from './Grid2D';
-import { createNoise2D } from './simplex-noise';
+import { createNoise2D } from 'simplex-noise';
 import { fbm2d } from './fbm2d';
 import alea from 'alea';
 
